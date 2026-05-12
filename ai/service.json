@@ -1,0 +1,43 @@
+{
+  "provider": "GRANITAS KG",
+  "url": "https://dastan96kg.github.io/granitas-landing-mutina/",
+  "lastUpdated": "2026-05-08",
+  "services": [
+    {
+      "name": "Производство брусчатки",
+      "description": "Полный производственный цикл брусчатки на цементе М600 (Иран). 8 видов в ассортименте, толщины 5 и 6 см.",
+      "areaServed": "Бишкек, Кыргызстан",
+      "category": "Manufacturing"
+    },
+    {
+      "name": "Доставка брусчатки по Бишкеку",
+      "description": "Бесплатная доставка по Бишкеку в течение 1–3 дней после оплаты. На крупные объёмы график согласовываем заранее.",
+      "areaServed": "Бишкек",
+      "price": "Бесплатно",
+      "category": "Logistics"
+    },
+    {
+      "name": "Укладка брусчатки под ключ",
+      "description": "Профессиональная укладка брусчатки мастерами с опытом. Гарантия 3–5 лет на покрытие.",
+      "areaServed": "Бишкек, Кыргызстан",
+      "warranty": "3–5 лет",
+      "category": "Construction"
+    }
+  ],
+  "products": [
+    { "name": "Кремль под мрамор. Иран М600", "thickness": "5 cm", "surface": "глянцевая", "cement": "M600 Iran", "tier": "premium" },
+    { "name": "Кремль под мрамор. Казахстан", "thickness": "5 cm", "surface": "матовая", "cement": "Kazakhstan", "tier": "mid" },
+    { "name": "Кремль", "thickness": "5 cm", "surface": "матовая", "cement": "standard", "tier": "standard" },
+    { "name": "Кремль антрацит", "thickness": "5 cm", "surface": "матовая", "cement": "standard", "tier": "standard" },
+    { "name": "Кирпичик", "thickness": "5 cm", "surface": "матовая", "cement": "standard", "tier": "standard" },
+    { "name": "Беш таш", "thickness": "5 cm", "surface": "мультиформат", "cement": "standard", "tier": "standard" },
+    { "name": "Беш таш. Иран М600", "thickness": "5 cm", "surface": "серо-мрамор", "cement": "M600 Iran", "tier": "premium" },
+    { "name": "Прессованный кирпичик", "thickness": "6 cm", "surface": "гладкая", "cement": "reinforced", "tier": "heavy-duty" }
+  ],
+  "contact": {
+    "phone": "+996555277222",
+    "whatsapp": "https://wa.me/996555277222",
+    "instagram": "https://instagram.com/_bruschatka_bishkek",
+    "address": "г. Бишкек, ул. Восточная, 248а"
+  }
+}
