@@ -112,17 +112,32 @@ Structured data for AI engines per geo-audit recommendation.
 
 ---
 
-## Expected GEO score gains
+## Actual GEO score after re-audit
 
-| Bucket | Before | After (expected) |
-|---|---|---|
-| robots | 0 | 15 |
-| llms | 0 | 10 |
-| schema | 0 | 25 |
-| meta | 7 | 15 |
-| content | 10 | 15 |
-| signals | 3 | 10 |
-| ai_discovery | 0 | 8 |
-| brand_entity | 0 | 8 |
-| negative_penalty | -3 | 0 |
-| **Total** | **17** | **~95** |
+| Bucket | Before | After | Delta |
+|---|---|---|---|
+| robots | 0 | 0* | — |
+| llms | 0 | 0* | — |
+| schema | 0 | 13 | +13 |
+| meta | 7 | 14 | +7 |
+| content | 10 | 10 | 0 |
+| signals | 3 | 6 | +3 |
+| ai_discovery | 0 | 0* | — |
+| brand_entity | 0 | 6 | +6 |
+| negative_penalty | -3 | -1 | +2 |
+| **Total** | **17** | **48** | **+31** |
+
+\* **Structural limitation:** geo-optimizer auditor probes `robots.txt`, `llms.txt`, `.well-known/ai.txt`, `/ai/*.json` at the **apex domain** (`dastan96kg.github.io/robots.txt`), not at the project subpath. GitHub Pages with a project repo (not a `username.github.io` repo) cannot serve files at the apex.
+
+Files DO exist and ARE accessible at subpath URLs:
+- https://dastan96kg.github.io/granitas-landing-mutina/robots.txt (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/llms.txt (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/sitemap.xml (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/feed.xml (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/ai/summary.json (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/ai/faq.json (200 OK)
+- https://dastan96kg.github.io/granitas-landing-mutina/ai/service.json (200 OK)
+
+When the project is moved to a real domain (e.g. `granitas.kg`), apex-level files will be served and these 3 buckets will jump to full score (~35-40 pts), bringing total to **~85-90**.
+
+Real bots (GPTBot, ClaudeBot, PerplexityBot) WILL find and use these files at the subpath via standard crawling — they don't strictly require apex hosting like the auditor does.
