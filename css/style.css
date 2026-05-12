@@ -148,14 +148,14 @@ h4 { font-size: 24px; }
   object-fit: cover;
   filter: brightness(0.78);
 }
-.hero__overlay {
+.hero__tint {
   position: absolute;
   left: var(--pad-x);
   bottom: var(--s-7);
   max-width: 720px;
   color: #fff;
 }
-.hero__overlay .eyebrow {
+.hero__tint .eyebrow {
   color: rgba(255,255,255,0.85);
   margin-bottom: var(--s-3);
 }
@@ -639,7 +639,7 @@ h4 { font-size: 24px; }
   .hero { height: 80vh; min-height: 540px; }
   .hero__title { font-size: 44px; }
   .hero__lede { font-size: 16px; }
-  .hero__overlay { bottom: var(--s-4); left: var(--s-3); right: var(--s-3); }
+  .hero__tint { bottom: var(--s-4); left: var(--s-3); right: var(--s-3); }
   .hero__scroll { display: none; }
 
   /* Manifesto */
