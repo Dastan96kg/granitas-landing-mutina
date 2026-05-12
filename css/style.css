@@ -40,7 +40,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+/* scroll-behavior removed — Lenis (effects.js) controls smooth scroll */
 
 body {
   background: var(--bg);
@@ -593,19 +593,12 @@ h4 { font-size: 24px; }
   border-color: var(--accent);
 }
 
-/* ====== REVEAL ANIMATION (Mutina-restrained, CSS-only fade-in) ====== */
-/* All .reveal items are always visible. A subtle fade-in is applied
-   via CSS animation at first render — no JS-dependent gate.
-   This keeps the page accessible, robust to no-JS, and snapshot-friendly. */
-@keyframes mutina-fade-in {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.reveal {
-  animation: mutina-fade-in 900ms var(--ease) both;
-}
+/* ====== REVEAL ANIMATION (Mutina-restrained, GSAP-driven via effects.js) ====== */
+/* The legacy .reveal CSS animation was removed — GSAP/ScrollTrigger in
+   js/effects.js handles fade-up on [data-reveal] elements with the
+   subtle "27 neutral minimal agency" easing. */
 @media (prefers-reduced-motion: reduce) {
-  .reveal { animation: none; }
+  [data-reveal] { opacity: 1 !important; transform: none !important; filter: none !important; }
 }
 
 /* ====== MOBILE ====== */
