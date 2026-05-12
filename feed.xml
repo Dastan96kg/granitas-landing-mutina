@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GRANITAS KG — Премиальная брусчатка из Бишкека</title>
+    <link>https://dastan96kg.github.io/granitas-landing-mutina/</link>
+    <description>GRANITAS KG — производитель премиальной брусчатки в Бишкеке. 10 лет на рынке, цемент М600 (Иран), гарантия 3–5 лет.</description>
+    <language>ru-RU</language>
+    <lastBuildDate>Thu, 08 May 2026 00:00:00 +0600</lastBuildDate>
+    <atom:link href="https://dastan96kg.github.io/granitas-landing-mutina/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Кремль под мрамор. Иран М600</title>
+      <link>https://dastan96kg.github.io/granitas-landing-mutina/#product-kreml-marble-iran</link>
+      <description>Премиум-брусчатка 5 см с глянцевым мраморным узором на цементе М600 (Иран).</description>
+      <pubDate>Thu, 08 May 2026 00:00:00 +0600</pubDate>
+      <guid>https://dastan96kg.github.io/granitas-landing-mutina/#product-kreml-marble-iran</guid>
+    </item>
+    <item>
+      <title>Беш таш. Иран М600</title>
+      <link>https://dastan96kg.github.io/granitas-landing-mutina/#product-besh-tash-iran</link>
+      <description>Мультиформат на премиум-цементе М600 (Иран). Серо-мраморная отделка.</description>
+      <pubDate>Thu, 08 May 2026 00:00:00 +0600</pubDate>
+      <guid>https://dastan96kg.github.io/granitas-landing-mutina/#product-besh-tash-iran</guid>
+    </item>
+    <item>
+      <title>Прессованный кирпичик</title>
+      <link>https://dastan96kg.github.io/granitas-landing-mutina/#product-pressed-kirpichik</link>
+      <description>Усиленная брусчатка 6 см для парковок и высоких нагрузок.</description>
+      <pubDate>Thu, 08 May 2026 00:00:00 +0600</pubDate>
+      <guid>https://dastan96kg.github.io/granitas-landing-mutina/#product-pressed-kirpichik</guid>
+    </item>
+  </channel>
+</rss>
